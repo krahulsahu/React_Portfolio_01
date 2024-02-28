@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.About {
+    display: flex;
+    height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageArea {
+    height: 100vh;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.imageArea img {
+    height: 80vh;
+}
+
+.textArea {
+    width: 75vw;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0rem 2rem;
+    font-size: 2rem;
+}
+
+.textArea span,
+p,
+a {
+    padding: 0.35rem;
+
+}
+
+.hello {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.name {
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+
+.pragraph {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-right: 10%;
+    line-height: 5vh;
+}
+
+.hiring {
+    display: flex;
+    justify-content: center;
+    background: wheat;
+    width: fit-content;
+    margin: 1rem 0;
+    padding: .75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.hiring img {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width:585px) {
+    .About{
+        display: flex;
+        justify-content: center;
+    }
+
+    .textArea {
+        font-size: 4.5vw;
+    }
+    
+    .hello {
+        font-size: 4.5vw;
+    }
+}
